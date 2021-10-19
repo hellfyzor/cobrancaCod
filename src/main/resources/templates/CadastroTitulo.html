@@ -4,10 +4,68 @@
     <meta charset="UTF-8"/>
     <title>Cadastro de título</title>
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
 <body>
 
-    <h1>Cadastro de título</h1>
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Emote" src="/static/images/emote.png" width="70" height="70"/>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Novo Cadastro</h3>
+        </div>
+
+        <div class="panel-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="descricao" class="col-sm-2 control-label">Descrição</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="descricao" placeholder="Descrição">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dataVencimento" class="col-sm-2 control-label">Data de Vencimento</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="dataVencimento" placeholder="Data de Vencimento">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="valor" class="col-sm-2 control-label">Valor</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="valor" placeholder="Valor">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="status" class="col-sm-2 control-label">Status</label>
+                        <div class="col-sm-2">
+                            <select class="form-control">
+                                <option> Pendente </option>
+                                <option> Recebido </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+
+                </form>
+
+        </div>
+    </div>
+
+
 
 <script src="/js/bootstrap.min.js"></script>
 </body>
